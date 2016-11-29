@@ -1,0 +1,23 @@
+# Oracle
+
+default: &default
+  adapter: oracle_enhanced
+  database: localhost:1521/xe
+  username: uniestudio
+  password: 12345
+
+development:
+  <<: *default
+
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  username: uniestudio_test
+  password: 12345
+
+production:
+  <<: *default
+
