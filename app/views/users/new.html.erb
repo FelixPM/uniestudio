@@ -1,0 +1,27 @@
+
+<div class="login">
+  <div class="container">
+    <div class="form">
+
+      <h1>Registro</h1>
+
+      <%= form_for @user do |f| %>
+          <%= f.label :Nombre %>:
+          <%= f.text_field :usu_nombre %><br />
+
+          <%= f.label :Apellido %>:
+          <%= f.text_field :usu_apellido %><br />
+
+          <%= f.label :Correo %>:
+          <%= f.text_field :usu_email %><br />
+
+          <%= f.label :Contraseña %>:
+          <%= f.password_field :password %><br />
+
+
+          <%= f.submit 'Registrarse'  %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
